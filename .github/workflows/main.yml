@@ -18,7 +18,7 @@ jobs:
           key: ${{ secrets.EC2_PRIVATE_KEY }}       # EC2 Key 파일의 내용
           script_stop: true                         # 명령어 실패 시 워크플로우 실패 처리
           script: |
-            cd /home/ubuntu/kosta02
+            cd /home/ubuntu/test0624
             git pull origin main
             mvn clean package
             sudo fuser -k -n tcp 8080 || true
