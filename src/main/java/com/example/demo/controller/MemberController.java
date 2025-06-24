@@ -8,6 +8,6 @@ public class MemberController {
 	
 	@GetMapping("/list")
 	public String list() {
-		return "회원목록2";
+		return "회원목록2+2";
 	}
 }
